@@ -19,3 +19,14 @@ header{
     font-size: 0.8em;
 }
 
+footer{
+    color: #fff;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+footer a{
+    color: #fff;
+    text-align: center;
+    font-size: 0.8em;
+}
