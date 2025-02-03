@@ -7,5 +7,15 @@ body{
     background-repeat: repeat;
     background-attachment: scroll;
     font-family: 'Century Gothic', sans-serif;
+    margin: 5%;
+    color: #fff;
+    font-size: 20px;
+ 
+}
+
+header{
+    color: #fff;
+    text-align: center;
+    font-size: 0.8em;
 }
 
