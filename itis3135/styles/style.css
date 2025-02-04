@@ -13,6 +13,24 @@
  
 }
 
+.top{
+    color: #fff;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+.top a{
+    color: #fff;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+.top a:hover{
+    background-color: #fff;
+    text-align: center;
+    font-size: 0.8em;
+    color:#1f81a2;
+}
 header{
     margin-top: 0;
     color: #fff;
