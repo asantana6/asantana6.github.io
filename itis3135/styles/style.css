@@ -50,6 +50,11 @@ footer a{
     font-size: 0.8em;
 }
 
+small{
+    max-width: 10%;
+    max-height:10%;
+}
+
 .school{
     background-color:#1f81a2;
   
