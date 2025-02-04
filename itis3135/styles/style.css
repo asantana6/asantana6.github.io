@@ -1,7 +1,7 @@
 
 
 
-body{
+.home{
     background-color:#1f81a2;
     background-image: url('../images/waves.gif');
     background-repeat: repeat;
@@ -30,4 +30,15 @@ footer a{
     color: #fff;
     text-align: center;
     font-size: 0.8em;
+}
+
+.school{
+    background-color:#1f81a2;
+  
+    background-repeat: repeat;
+    background-attachment: scroll;
+    font-family: 'Century Gothic', sans-serif;
+    margin: 5%;
+    color: #fff;
+    font-size: 20px;
 }
