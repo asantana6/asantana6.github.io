@@ -44,12 +44,18 @@ footer{
     font-size: 0.8em;
 }
 
-footer a{
+a{
     color: #fff;
     text-align: center;
     font-size: 0.8em;
 }
 
+a:hover{
+    background-color: #fff;
+    text-align: center;
+    font-size: 0.8em;
+    color:#1f81a2;
+}
 .small{
     width: 30%;
     display: block;
@@ -78,3 +84,6 @@ footer a{
     
 }
 
+figcaption{
+    font-style: italic;
+}
