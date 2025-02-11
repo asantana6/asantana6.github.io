@@ -1,7 +1,27 @@
 
 
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
 
 
 .logo{
-    width:30%;
+    width: max(10rem, 18vw);
+    background-color: #680c0c;
+    aspect-ratio: 6 / 4;
+    padding: 0.4rem;
+    border: 0.2rem solid black;
 }
+
+h1 {
+    font-size: min(5vw, 1.2em);
+    text-align: center;
+  }
+
+  body{
+    background-color: rgb(53, 52, 57);
+    color: rgb(223, 231, 232);
+  }
