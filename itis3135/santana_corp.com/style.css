@@ -25,3 +25,12 @@ h1 {
     background-color: rgb(53, 52, 57);
     color: rgb(223, 231, 232);
   }
+
+  a{
+    color: rgb(223, 231, 232);
+  }
+
+  a:hover{
+   
+    color: #d82020;
+  }
