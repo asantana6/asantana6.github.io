@@ -1,6 +1,6 @@
 p{
     text-align: center;
-    color:black;
+    color:rgb(71, 71, 71);
     font-size: 1.5em;
     
 }
@@ -13,17 +13,25 @@ body{
 
 a{
     text-align: center;
-    color: black;
+    color: rgb(71, 71, 71);
     font-size: 1em;
 }
 
 a:hover{
     text-align: center;
     color: white;
-    background-color: black;
+    background-color: rgb(71, 71, 71);
 }
 
 em{
     color:rgba(46, 122, 97, 0.677);
 font-size: 1.5em;
+}
+
+h1, h2{
+    text-align: center;
+}
+
+nav{
+    text-align: center;
 }
