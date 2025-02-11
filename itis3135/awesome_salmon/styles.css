@@ -19,8 +19,8 @@ a{
 
 a:hover{
     text-align: center;
-    color: white;
-    background-color: rgb(71, 71, 71);
+    color: rgb(175, 44, 44);
+
 }
 
 em{
@@ -30,8 +30,19 @@ font-size: 1.5em;
 
 h1, h2{
     text-align: center;
+    font-style: italic;
 }
 
 nav{
     text-align: center;
+}
+
+.small{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align:center;
 }
