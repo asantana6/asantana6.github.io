@@ -1,6 +1,29 @@
 p{
     text-align: center;
-    color:red;
+    color:black;
     font-size: 1.5em;
+    
 }
 
+
+body{
+    background-color: aliceblue;
+
+}
+
+a{
+    text-align: center;
+    color: black;
+    font-size: 1em;
+}
+
+a:hover{
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+
+em{
+    color:rgba(46, 122, 97, 0.677);
+font-size: 1.5em;
+}
