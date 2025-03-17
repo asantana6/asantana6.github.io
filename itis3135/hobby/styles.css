@@ -1,0 +1,121 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+nav {
+    background-color: #c0c58e;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: rgb(61, 182, 152);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.content-section {
+    display: none; /* Initially hide all sections */
+    padding: 20px;
+  
+    margin-top: 20px;
+}
+
+.content-section h2 {
+    margin-top: 0;
+}
+
+a{
+    color:aliceblue;
+}
+
+a:hover{
+    background-color:aliceblue;
+  
+    color:#c0c58e;
+}
+
+
+figcaption{
+    font-style: italic;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align:center;
+}
+
+.small{
+    width:90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align:center;
+}
+
+h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+
+main { 
+    max-width: 1200px; 
+    width: 95%;
+    margin: 0 auto;
+    /* Adjust as needed */ 
+}
+
+footer{
+    margin-left: auto;
+    margin-right: auto;
+    text-align:center;
+}
+
+
+@media (max-width: 1199px) and (min-width: 769px) {
+    main{
+        width: 60%;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    main{
+        width: 30%;
+        margin: 0 auto;
+
+    }
+    
+ 
+  }
+
+  
+/* Rule Overrides For Laptops / Small Screens */
+@media screen and ( min-width: 981px ) and ( max-width: 1400px ) {
+    main{
+        width: 50%;
+    }
+}
+
+/* Rule Overrides For Tablet Devices */
+@media screen and ( min-width: 601px ) and ( max-width: 980px )  {
+    main{
+        width: 60%;
+    }
+}
+
+/* Rule Overrides For Mobile Devices */
+@media screen and ( min-width: 370px ) and ( max-width: 600px ) {
+    main{
+        width: 30%;
+    }
+}
