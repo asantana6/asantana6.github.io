@@ -81,7 +81,7 @@ footer{
 
 
 @media (max-width: 1199px) and (min-width: 769px) {
-    main{
+    body{
         width: 60%;
     }
 }
@@ -89,7 +89,7 @@ footer{
 
 
 @media (max-width: 768px) {
-    main{
+    body{
         width: 30%;
         margin: 0 auto;
 
@@ -101,21 +101,21 @@ footer{
   
 /* Rule Overrides For Laptops / Small Screens */
 @media screen and ( min-width: 981px ) and ( max-width: 1400px ) {
-    main{
+    body{
         width: 50%;
     }
 }
 
 /* Rule Overrides For Tablet Devices */
 @media screen and ( min-width: 601px ) and ( max-width: 980px )  {
-    main{
+    body{
         width: 60%;
     }
 }
 
 /* Rule Overrides For Mobile Devices */
 @media screen and ( min-width: 370px ) and ( max-width: 600px ) {
-    main{
+    body{
         width: 30%;
     }
 }
