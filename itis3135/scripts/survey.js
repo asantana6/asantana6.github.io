@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     form.addEventListener("submit", function(event) {
         event.preventDefault();
         
-        if(document.getElementById("image") === "") {
+        if(document.getElementById("image") === ""){
             document.imageFile.value="images/prom.png";
         }
 
@@ -31,8 +31,27 @@ document.addEventListener("DOMContentLoaded", () => {
             computerPlatform: document.getElementById("computerPlatform").value,
             funnyThing: document.getElementById("funnyThing").value,
             anythingElse: document.getElementById("anythingElse").value,
-            courses: Array.from(document.querySelectorAll(".courseField")).map(input => input.value)
+            courses: Array.from(document.querySelectorAll(".courseField")).map(input = () => input.value)
         };
+
+        
+    // Add new course input field
+    function addCourseField() {
+        const courseField = document.createElement("div");
+        courseField.innerHTML = `
+            <input type="text" class="courseField" required>
+            <button type="button" class="removeCourse">X</button>
+        `;
+        coursesDiv.appendChild(courseField);
+
+        // Remove button for courses
+        courseField.querySelector(".removeCourse").addEventListener("click", function() {
+            courseField.remove();
+        });
+    }
+
+    addCourseBtn.addEventListener("click", addCourseField);
+});
 
         // Display the collected data
         outputDiv.innerHTML = `
@@ -64,21 +83,3 @@ document.addEventListener("DOMContentLoaded", () => {
             document.getElementById("addCourse").addEventListener("click", addCourseField);
         });
     });
-
-    // Add new course input field
-    function addCourseField() {
-        const courseField = document.createElement("div");
-        courseField.innerHTML = `
-            <input type="text" class="courseField" required>
-            <button type="button" class="removeCourse">X</button>
-        `;
-        coursesDiv.appendChild(courseField);
-
-        // Remove button for courses
-        courseField.querySelector(".removeCourse").addEventListener("click", function() {
-            courseField.remove();
-        });
-    }
-
-    addCourseBtn.addEventListener("click", addCourseField);
-});
