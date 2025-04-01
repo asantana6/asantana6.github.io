@@ -77,7 +77,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     addCourseBtn.addEventListener("click", addCourseField);
-});
 
         // Restart button to reset form
         document.getElementById("restart").addEventListener("click", function() {
@@ -88,3 +87,7 @@ document.addEventListener("DOMContentLoaded", () => {
             document.getElementById("addCourse").addEventListener("click", addCourseField);
         });
     });
+
+});
+
+    
