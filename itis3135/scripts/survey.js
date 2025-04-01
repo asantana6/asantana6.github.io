@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
     form.addEventListener("submit", function(event) {
         event.preventDefault();
         
-        if(document.getElementById("image") === ""){
+        if (document.getElementById("image") === ""){
             document.imageFile.value="images/prom.png";
         }
 
