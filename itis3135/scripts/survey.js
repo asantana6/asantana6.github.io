@@ -4,6 +4,17 @@ document.addEventListener("DOMContentLoaded", () => {
     const coursesDiv = document.getElementById("courses");
     const addCourseBtn = document.getElementById("addCourse");
 
+
+
+    function loadImage(){
+        var image = document.getElementById('introImage').files[0];
+
+        const imageUrl = URL.createObjectURL(image);
+
+        var text = "<img src\"" + imageURL + "\"";
+
+        document.getElementById('loadImage').innerHTML = text;
+    }
     // Prevent form submission if required fields are missing
     form.addEventListener("submit", function(event) {
         event.preventDefault();
