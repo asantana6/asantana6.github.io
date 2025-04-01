@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-
+    
     // Prevent form submission if required fields are missing
     form.addEventListener("submit", function(event) {
         event.preventDefault();
@@ -59,9 +59,8 @@ document.addEventListener("DOMContentLoaded", () => {
         form.style.display = "none";
         outputDiv.style.display = "block";
 
-        
-          // Add new course input field
-    function addCourseField() {
+         // Add new course input field
+     function addCourseField() {
         const courseField = document.createElement("div");
         courseField.innerHTML = `
             <input type="text" class="courseField" required>
@@ -74,6 +73,7 @@ document.addEventListener("DOMContentLoaded", () => {
             courseField.remove();
         });
     }
+          
 
         
          // Restart button to reset form
@@ -84,11 +84,11 @@ document.addEventListener("DOMContentLoaded", () => {
             document.getElementById("courses").innerHTML = `<button type="button" id="addCourse">Add Course</button>`;
             document.getElementById("addCourse").addEventListener("click", addCourseField);
         });
-
-    addCourseBtn.addEventListener("click", addCourseField);
-
        
 
     });
+    
+    
+
+    addCourseBtn.addEventListener("click", addCourseField);
 });
-  
