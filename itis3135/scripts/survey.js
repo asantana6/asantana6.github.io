@@ -37,24 +37,6 @@ document.addEventListener("DOMContentLoaded", () => {
             courses: Array.from(document.querySelectorAll(".courseField")).map(input = () => input.value)
         };
 
-        
-    // Add new course input field
-    function addCourseField() {
-        const courseField = document.createElement("div");
-        courseField.innerHTML = `
-            <input type="text" class="courseField" required>
-            <button type="button" class="removeCourse">X</button>
-        `;
-        coursesDiv.appendChild(courseField);
-
-        // Remove button for courses
-        courseField.querySelector(".removeCourse").addEventListener("click", function() {
-            courseField.remove();
-        });
-    }
-
-    addCourseBtn.addEventListener("click", addCourseField);
-});
 
         // Display the collected data
         outputDiv.innerHTML = `
@@ -76,6 +58,26 @@ document.addEventListener("DOMContentLoaded", () => {
         // Hide form and show output
         form.style.display = "none";
         outputDiv.style.display = "block";
+
+        
+        
+    // Add new course input field
+    function addCourseField() {
+        const courseField = document.createElement("div");
+        courseField.innerHTML = `
+            <input type="text" class="courseField" required>
+            <button type="button" class="removeCourse">X</button>
+        `;
+        coursesDiv.appendChild(courseField);
+
+        // Remove button for courses
+        courseField.querySelector(".removeCourse").addEventListener("click", function() {
+            courseField.remove();
+        });
+    }
+
+    addCourseBtn.addEventListener("click", addCourseField);
+});
 
         // Restart button to reset form
         document.getElementById("restart").addEventListener("click", function() {
