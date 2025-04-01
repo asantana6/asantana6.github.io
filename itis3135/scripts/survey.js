@@ -60,7 +60,15 @@ document.addEventListener("DOMContentLoaded", () => {
         outputDiv.style.display = "block";
 
         
-        
+         // Restart button to reset form
+         document.getElementById("restart").addEventListener("click", function() {
+            outputDiv.style.display = "none";
+            form.style.display = "block";
+            form.reset();
+            document.getElementById("courses").innerHTML = `<button type="button" id="addCourse">Add Course</button>`;
+            document.getElementById("addCourse").addEventListener("click", addCourseField);
+        });
+    });
     // Add new course input field
     function addCourseField() {
         const courseField = document.createElement("div");
@@ -78,15 +86,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     addCourseBtn.addEventListener("click", addCourseField);
 
-        // Restart button to reset form
-        document.getElementById("restart").addEventListener("click", function() {
-            outputDiv.style.display = "none";
-            form.style.display = "block";
-            form.reset();
-            document.getElementById("courses").innerHTML = `<button type="button" id="addCourse">Add Course</button>`;
-            document.getElementById("addCourse").addEventListener("click", addCourseField);
-        });
-    });
+       
 
 });
 
