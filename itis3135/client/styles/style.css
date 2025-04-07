@@ -20,9 +20,9 @@ footer{
 }
 
 img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+ 
+    padding: 10px;
     width: 50%;
     max-width: 400px;
 }
