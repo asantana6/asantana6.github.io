@@ -10,7 +10,7 @@
 <body class="school">
     <div data-include="components/header.html"></div>
 
-    <main>
+
        
         <main class="container">
             <h2>ITIS 3135 Slideshow</h2>  
@@ -74,7 +74,7 @@
                 </div>
     
                 <div class="mySlides fade">
-                    <img src="images/nail-clipper.jpg" alt="Nail Clipper">
+                    <img src="images/nailclipper.jpg" alt="Nail Clipper">
                     <div class="caption">N - Nail Clipper (12th letter)</div>
                 </div>
     
@@ -84,8 +84,10 @@
                 </div>
     
                 <!-- Navigation arrows -->
-                <a class="prev" onclick="plusSlides(-1)">❮</a>
-                <a class="next" onclick="plusSlides(1)">❯</a>
+                <!--a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a-->
+                    <a class="prev">❮</a>
+<a class="next">❯</a>
             </div>
             <br>
     
@@ -118,32 +120,16 @@
                 <img class="thumbnail" src="images/notebook.jpg" onclick="currentSlide(9)" alt="Notebook">
                 <img class="thumbnail" src="images/tapes.jpg" onclick="currentSlide(10)" alt="Tapes">
                 <img class="thumbnail" src="images/albums.jpg" onclick="currentSlide(11)" alt="Albums">
-                <img class="thumbnail" src="images/nail-clipper.jpg" onclick="currentSlide(12)" alt="Nail Clipper">
+                <img class="thumbnail" src="images/nailclipper.jpg" onclick="currentSlide(12)" alt="Nail Clipper">
                 <img class="thumbnail" src="images/arcade-stick.jpg" onclick="currentSlide(13)" alt="Arcade Stick">
             </div>
     
-            <div class="references">
-                <h3>Image References:</h3>
-                <ul>
-                    <li><a href="https://www.pexels.com/photo/white-wireless-earphones-788946/" target="_blank">Airpods Image</a></li>
-                    <li><a href="https://www.flickr.com/photos/jeepersmedia/14791337356/" target="_blank">Bojangles Image</a></li>
-                    <li><a href="https://commons.wikimedia.org/wiki/File:Boss_DS-1_Distortion_Pedal.jpg" target="_blank">Distortion Pedal Image</a></li>
-                    <li><a href="https://www.pexels.com/photo/ice-cubes-263802/" target="_blank">Ice Image</a></li>
-                    <li><a href="https://www.pexels.com/photo/pink-eraser-159533/" target="_blank">Eraser Image</a></li>
-                    <li><a href="https://www.pexels.com/photo/light-bulb-against-black-background-356362/" target="_blank">Light Image</a></li>
-                    <li><a href="https://commons.wikimedia.org/wiki/File:Fender_6G15_reverb_unit.jpg" target="_blank">Spring Reverb Image</a></li>
-                    <li><a href="https://www.flickr.com/photos/russelljsmith/3211806847/" target="_blank">Amp Image</a></li>
-                    <li><a href="https://www.pexels.com/photo/notebook-on-the-table-210661/" target="_blank">Notebook Image</a></li>
-                    <li><a href="https://www.flickr.com/photos/oskay/472005903/" target="_blank">Tapes Image</a></li>
-                    <li><a href="https://www.flickr.com/photos/oskay/2281941273/" target="_blank">Albums Image</a></li>
-                    <li><a href="https://commons.wikimedia.org/wiki/File:Nail_clipper.jpg" target="_blank">Nail Clipper Image</a></li>
-                    <li><a href="https://commons.wikimedia.org/wiki/File:MadCatz_Tournament_Edition_2_Fightstick.jpg" target="_blank">Arcade Stick Image</a></li>
-                </ul>
-            </div>
+          
     </main>
 
     <div data-include="components/footer.html"></div>
-      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="scripts/slideshow.js"></script>
     <script src="scripts/htmlinclude.js"></script>
 </body>
 </html>
