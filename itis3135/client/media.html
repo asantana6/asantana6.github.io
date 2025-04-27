@@ -8,24 +8,14 @@
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    
-    <header>
-        <nav>
-                <a href="index.html">Home</a>
-                <a href="portfolio.html">Portfolio</a>
-                <a href="media.html">Media</a>
-                <a href="about.html">About Me</a>
-                <a href="contact.html">Contact</a>
-        </nav>
-    </header>
-
-    <main>
+    <div data-include="components/header.html"></div>
+    <main class="container">
         <h2>Anna Speakmon's Media Page</h2> 
 
         <h2>Clips</h2>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/cM3zfpGHzos?si=cOFuFWrVGdl05GSf" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     
-        <h3>Images</h3> 
+        <!--h3>Images</h3> 
         <h4>She Kills Monsters</h4>
         <img src="img/SKM1.png" alt="Me Sitting down"><br>
         <img src="img/SKM2.png" alt="Performing"><br>
@@ -38,15 +28,96 @@
         
         <img src="img/image2.png" alt="Dance Sequence"><br>
         <img src="img/A1.png" alt="Discussion between actors"><br>
-        <img src="img/A2.png" alt="Singing with another actor"><br>
+        <img src="img/A2.png" alt="Singing with another actor"><br-->
        
        
-        </main>
-
-    <footer>
-        <p>Page Designed by <a href="santana_corp.com/">Santana Corp</a>, Certified in <a href="https://www.freecodecamp.org/certification/asantana/responsive-web-design">Responsive Web Design</a></p>
-   
-    </footer>
-    <!--script src="scripts/htmlinclude.js"></script-->
+      
+            <div class="slideshow-container">
+                <!-- Slides -->
+                <div class="mySlides fade">
+                    <img src="img/SKM1.png" alt="Me Sitting down"><br>
+                    <div class="caption">Me Sitting down</div>
+                </div>
+    
+                <div class="mySlides fade">
+                    <img src="img/SKM2.png" alt="Performing"><br>
+                    <div class="caption">Performing</div>
+                </div>
+    
+                <div class="mySlides fade">
+                    <img src="img/SKM3.png" alt="Table with me crossing my arms"><br>
+                    <div class="caption">Table with me crossing my arms</div>
+                </div>
+    
+                <div class="mySlides fade">
+                    <img src="img/SKM4.png" alt="Carrying a sword and shield"><br>
+                    <div class="caption">Carrying a sword and shield</div>
+                </div>
+    
+                <div class="mySlides fade">
+                    <img src="img/SKM5.png" alt="Commencing Battle"><br>
+                    <div class="caption">Commencing Battle</div>
+                </div>
+    
+                <div class="mySlides fade">
+                    <img src="img/image2.png" alt="Dance Sequence"><br>
+                    <div class="caption">Dance Sequence</div>
+                </div>
+    
+                <div class="mySlides fade">
+                    <img src="img/A1.png" alt="Discussion between actors"><br>
+                    <div class="caption">Discussion between actors</div>
+                </div>
+    
+                <div class="mySlides fade">
+                    <img src="img/A2.png" alt="Singing with another actor"><br>
+                    <div class="caption">Singing with another actor</div>
+                </div>
+    
+    
+                <!-- Navigation arrows -->
+                <!--a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a-->
+                    <a class="prev">❮</a>
+<a class="next">❯</a>
+            </div>
+            <br>
+    
+            <!-- Thumbnail navigation -->
+            <div class="dot-container">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+                <span class="dot" onclick="currentSlide(7)"></span>
+                <span class="dot" onclick="currentSlide(8)"></span>
+                <span class="dot" onclick="currentSlide(9)"></span>
+                <span class="dot" onclick="currentSlide(10)"></span>
+                <span class="dot" onclick="currentSlide(11)"></span>
+                <span class="dot" onclick="currentSlide(12)"></span>
+                <span class="dot" onclick="currentSlide(13)"></span>
+            </div>
+    
+    
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="img/SKM1.png" onclick="currentSlide(1)" alt="Me Sitting down">
+                <img class="thumbnail" src="img/SKM2.png" onclick="currentSlide(2)" alt="Performing">
+                <img class="thumbnail" src="img/SKM3.png" onclick="currentSlide(3)" alt="Table with me crossing my arms">
+                <img class="thumbnail" src="img/SKM4.png" onclick="currentSlide(4)" alt="Carrying a sword and shield">
+                <img class="thumbnail" src="img/SKM5.png" onclick="currentSlide(5)" alt="Commencing Battle">
+                <img class="thumbnail" src="img/image2.png" onclick="currentSlide(6)" alt="Dance Sequence">
+                <img class="thumbnail" src="img/A1.png" onclick="currentSlide(7)" alt="Discussion between actors">
+                <img class="thumbnail" src="img/A2.png" onclick="currentSlide(8)" alt="Singing with another actor">
+               
+            </div>
+    
+          
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="scripts/slideshow.js"></script>
+        <div data-include="components/footer.html"></div>
+    <script src="scripts/htmlinclude.js"></script>
 </body>
 </html>
