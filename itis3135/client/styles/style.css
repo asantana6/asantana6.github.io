@@ -154,3 +154,11 @@ a:hover{
     background-color: #0e435c;
     border-radius: 8px;
 }
+
+
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align:center;
+}
