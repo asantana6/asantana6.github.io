@@ -162,3 +162,10 @@ a:hover{
     margin-right: auto;
     text-align:center;
 }
+
+.content-section {
+    display: none; /* Initially hide all sections */
+    padding: 20px;
+  
+    margin-top: 20px;
+}
