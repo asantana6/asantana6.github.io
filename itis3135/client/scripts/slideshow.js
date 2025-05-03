@@ -55,12 +55,14 @@ $(document).ready(function() {
         $(".next").click(function() { plusSlides(1); });
         
         $(".dot").click(function() {
-            currentSlide($(this).index() + 1);
+            currentSlide($(".dot").index(this) + 1);
         });
         
+        
         $(".thumbnail").click(function() {
-            currentSlide($(this).index() + 1);
+            currentSlide($(".thumbnail").index(this) + 1);
         });
+        
         
         // Pause on hover
         $(".slideshow-container").hover(
