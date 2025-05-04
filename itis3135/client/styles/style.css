@@ -137,7 +137,7 @@ a:hover{
 }
 
 .thumbnail {
-    width: 8%;
+    width: 20%;
     object-fit: cover;
     margin: 5px;
     cursor: pointer;
